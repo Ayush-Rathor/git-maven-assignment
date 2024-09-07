@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>in.AshokIt</groupId>
+  <artifactId>01-Maven-WebAPP</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>01-Maven-WebAPP Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+<properties>
+<java.version>11</java.version>
+<sonar.host.url>http://3.7.46.28:9000/</sonar.host.url>
+<sonar.login>admin</sonar.login>
+<sonar.password>admin</sonar.password>
+</properties>
+  <artifactId>-01-Maven-WebApp</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>-01-Maven-WebApp Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+
+    </dependency>
+  </dependencies>
+<distributionManagement>
+
+<snapshotRepository>
+<id>nexus</id>
+<name>ayush-maven-snapshotrepo</name>
+<url>http://3.108.53.242:8081/repository/ayush-maven-snapshot/</url>
+</snapshotRepository>
+
+<repository>
+<id>nexus</id>
+<name>ayush-maven-releaserepo</name>
+<url>http://3.108.53.242:8081/repository/ayush-maven-release/</url>
+</repository>
+
+</distributionManagement>
+
+  <build>
+    <finalName>01-Maven-WebAPP</finalName>
+</build>
+  <build>
+    <finalName>-01-Maven-WebApp</finalName>
+  </build>
+</project>
