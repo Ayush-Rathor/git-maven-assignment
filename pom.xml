@@ -18,9 +18,10 @@
       <scope>test</scope>
 
     </dependency>
-  </dependencies>
+</dependencies>
 
   <build>
     <finalName>01-Maven-WebAPP</finalName>
 </build>
 </project>
+...
